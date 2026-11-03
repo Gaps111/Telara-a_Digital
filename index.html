@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telaraña Digital: biblioteca pública de proyectos de programación.">
+    <title>Telaraña Digital | Biblioteca de código</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">
+        <span>🕸️</span> TELARAÑA DIGITAL
+    </a>
+    <a href="#proyectos" class="nav-link">Explorar proyectos</a>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-tag">BIBLIOTECA DIGITAL · 2026</div>
+
+        <h1>Donde las ideas<br>
+            se convierten en <span>código.</span>
+        </h1>
+
+        <p>
+            Un espacio para compartir, explorar y descubrir
+            proyectos de programación.
+        </p>
+
+        <a href="#proyectos" class="main-button">
+            Explorar biblioteca ↗
+        </a>
+
+        <div class="hero-decoration">{"</>"}</div>
+    </section>
+
+    <section class="library" id="proyectos">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">COLECCIÓN PERSONAL</span>
+                <h2>Mis proyectos<span>.</span></h2>
+            </div>
+            <span class="project-count" id="contador">04 PROYECTOS</span>
+        </div>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="search" id="buscador"
+                placeholder="Buscar proyectos...">
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-category="todos">Todos</button>
+            <button class="filter" data-category="videojuegos">Videojuegos</button>
+            <button class="filter" data-category="web">Páginas web</button>
+            <button class="filter" data-category="otros">Otros</button>
+        </div>
+
+        <div class="project-grid" id="lista-proyectos"></div>
+
+        <p id="sin-resultados" hidden>
+            No se encontraron proyectos.
+        </p>
+    </section>
+
+    <section class="about">
+        <span class="eyebrow">SOBRE ESTE ESPACIO</span>
+        <h2>Una idea. Muchos proyectos.</h2>
+        <p>
+            Telaraña Digital es una biblioteca independiente
+            donde se reúnen proyectos, experimentos y creaciones
+            desarrolladas mediante programación.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">🕸️ TELARAÑA DIGITAL</div>
+    <p>Creado con código, creatividad y curiosidad.</p>
+    <p class="copyright">© 2026 · Todos los proyectos tienen su propia historia.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
