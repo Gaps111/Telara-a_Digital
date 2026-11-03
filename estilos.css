@@ -344,3 +344,67 @@ footer p {
         padding: 60px 7%;
     }
 }
+/* VISOR DE PROYECTOS */
+
+#visor-demo {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+}
+
+#visor-demo.visor-activo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visor-contenido {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    border: 1px solid #782cff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.visor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #17131f;
+    color: white;
+}
+
+.visor-header button {
+    background: #782cff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#visor-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+}
+
+@media (max-width: 600px) {
+
+    #visor-demo {
+        padding: 5px;
+    }
+
+    .visor-contenido {
+        border-radius: 8px;
+    }
+
+}
