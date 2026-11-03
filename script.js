@@ -39,6 +39,15 @@ const proyectos = [
         icono: "🎂",
         demo: "https://muddy-wave-ca0f.gavodelangel.workers.dev/",
         codigo: ""
+    },
+    {
+        nombre: "Actualización 610",
+        categoria: "parche v.12",
+        descripcion: "S.ub.A23",
+        tecnologias: ["HTML", "CSS", "JavaScript"],
+        icono: "!",
+        demo: "",
+        codigo: ""
     }
 ];
 
