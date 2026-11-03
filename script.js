@@ -7,10 +7,10 @@ const proyectos = [
     {
         nombre: "Veterinaria Patitas",
         categoria: "videojuegos",
-        descripcion: "Simulador de veterinaria donde puedes atender mascotas y administrar una clínica.",
+        descripcion: "Simulador de veterinaria donde puedes atender mascotas y administrar una clínica,no olvides poner tu celular en horizontal",
         tecnologias: ["HTML", "CSS", "JavaScript"],
         icono: "🐾",
-        demo: "",
+        demo: "https://venerable-lamington-56c36c.netlify.app",
         codigo: ""
     },
     {
