@@ -37,7 +37,7 @@ const proyectos = [
         descripcion: "Una página web especial de felicitación con diseño personalizado.",
         tecnologias: ["HTML", "CSS", "JavaScript"],
         icono: "🎂",
-        demo: "",
+        demo: "https://muddy-wave-ca0f.gavodelangel.workers.dev/",
         codigo: ""
     }
 ];
