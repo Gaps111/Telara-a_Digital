@@ -29,7 +29,7 @@ const proyectos = [
         tecnologias: ["HTML", "CSS"],
         icono: "🎧",
         demo: "https://spring-fog-d41e.gavodelangel.workers.dev/",
-        codigo: ""
+        codigo: "https://spring-fog-d41e.gavodelangel.workers.dev/"
     },
     {
         nombre: "Feliz cumpleaños yayey",
