@@ -117,13 +117,18 @@ function mostrarProyectos() {
             </div>
         `;
 
-        tarjeta.querySelector(".demo-button")
-            .addEventListener("click", function(event) {
-                if (!proyecto.demo) {
-                    event.preventDefault();
-                    alert("Este proyecto todavía no tiene una demostración publicada.");
-                }
-            });
+   tarjeta.querySelector(".demo-button")
+    .addEventListener("click", function(event) {
+
+        event.preventDefault();
+
+        if (!proyecto.demo) {
+            alert("Este proyecto todavía no tiene una demostración publicada.");
+            return;
+        }
+
+        abrirDemo(proyecto.demo, proyecto.nombre);
+    });
 
         tarjeta.querySelector(".code-button")
             .addEventListener("click", function(event) {
@@ -158,3 +163,58 @@ document.querySelectorAll(".filter").forEach(boton => {
 
 // Mostrar proyectos al iniciar
 mostrarProyectos();
+function abrirDemo(url, nombre) {
+
+    let visor = document.getElementById("visor-demo");
+
+    if (!visor) {
+
+        visor = document.createElement("div");
+
+        visor.id = "visor-demo";
+
+        visor.innerHTML = `
+            <div class="visor-contenido">
+
+                <div class="visor-header">
+
+                    <h2 id="visor-titulo"></h2>
+
+                    <button id="cerrar-visor">
+                        ✕
+                    </button>
+
+                </div>
+
+                <iframe
+                    id="visor-frame"
+                    src=""
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        `;
+
+        document.body.appendChild(visor);
+
+        document.getElementById("cerrar-visor")
+            .addEventListener("click", cerrarDemo);
+    }
+
+    document.getElementById("visor-titulo").textContent = nombre;
+
+    document.getElementById("visor-frame").src = url;
+
+    visor.classList.add("visor-activo");
+
+}
+
+function cerrarDemo() {
+
+    const visor = document.getElementById("visor-demo");
+
+    visor.classList.remove("visor-activo");
+
+    document.getElementById("visor-frame").src = "";
+
+}
