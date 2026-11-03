@@ -28,7 +28,7 @@ const proyectos = [
         descripcion: "Página web inspirada en el universo visual de Twenty One Pilots.",
         tecnologias: ["HTML", "CSS"],
         icono: "🎧",
-        demo: "",
+        demo: "https://spring-fog-d41e.gavodelangel.workers.dev/",
         codigo: ""
     },
     {
